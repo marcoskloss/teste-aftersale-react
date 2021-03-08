@@ -1,0 +1,16 @@
+.container {
+  width: 3rem;
+  height: 3rem;
+
+  cursor: pointer;
+  background: #1a1a1a;
+}
+
+.on {
+  background: rgb(241, 241, 12);
+  box-shadow: 0 0 15px 15px rgba(228, 231, 10, 0.2);
+}
+
+.off {
+  background: #1a1a1a;
+}

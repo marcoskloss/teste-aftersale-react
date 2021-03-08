@@ -1,0 +1,40 @@
+.container {
+  position: absolute;
+  top: 100px;
+  left: 250px;
+
+  height: 3rem;
+  width: 8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container button {
+  height: 100%;
+  width: 50%;
+
+  font-size: 1rem;
+  font-weight: bold ;
+  color: rgb(228, 238, 233);
+
+  background: rgb(9, 230, 93);
+
+  transition: background .3s;
+
+  outline: none;
+}
+
+.container button:hover {
+  background: rgb(15, 212, 91);
+}
+
+.container button:first-child {
+  border-radius: 4px 0 0 4px;
+  
+}
+
+.container button:nth-child(2) {
+  border-radius: 0 4px 4px 0;
+}

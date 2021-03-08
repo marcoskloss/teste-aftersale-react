@@ -1,0 +1,12 @@
+.container {
+  height: 5rem;
+  width: 5rem;
+
+  position: absolute;
+  top: 4%;
+  right: 4%;
+
+  border-radius: 50%;
+  background: gold;
+}
+
