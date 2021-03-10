@@ -2,12 +2,15 @@ import styles from '../styles/components/Building.module.css'
 
 import { BuildingWindow } from './BuildingWindow'
 
-export function Building() {
+export function Building({ globalState, clickCounter }) {
+
   let windowsList = []
   for (let i = 0; i < 12; i++) {
     windowsList.push(
       <BuildingWindow
         key={i}
+        globalState={globalState}
+        clickCounter={clickCounter}
       />
     )
   }

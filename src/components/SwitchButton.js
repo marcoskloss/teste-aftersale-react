@@ -1,18 +1,21 @@
-import { useContext, useState } from 'react'
-import { GlobalContext } from '../context/GlobalContext'
 import styles from '../styles/components/SwitchButton.module.css'
 
-export function SwitchButton() {
-  const { globalSwitch } = useContext(GlobalContext)
+export function SwitchButton({ setGlobalState, setClickCounter }) {
   return (
     <div className={styles.container}>
       <button
-        onClick={() => globalSwitch(true)}  
+        onClick={() => {
+          setClickCounter(prevState => prevState += 1)
+          setGlobalState(true)
+        }}  
       >
         On
       </button>
       <button
-        onClick={() => globalSwitch(false)}   
+        onClick={() => {
+          setClickCounter(prevState => prevState += 1)
+          setGlobalState(false)
+        }}   
       >
          Off
       </button>

@@ -1,16 +1,17 @@
-import { useContext, useState } from 'react'
-import { GlobalContext } from '../context/GlobalContext'
+import { useEffect, useState } from 'react'
 import styles from '../styles/components/BuildingWindow.module.css'
 
-export function BuildingWindow() {
-  const { windowLightIsOn } = useContext(GlobalContext)
+export function BuildingWindow({ globalState, clickCounter }) {
+  const [ lightIsOn, setLightIsOn ] = useState(globalState)
 
-  const [ localWindowState, setLocalWindowState ] = useState(windowLightIsOn)
+  useEffect(() => {
+    setLightIsOn(globalState)
+  }, [globalState, clickCounter])
 
   return (
     <div 
-      className={`${styles.container} ${localWindowState ? styles.on : styles}`}
-      onClick={() => setLocalWindowState(prevState => !prevState)}
+      className={`${styles.container} ${lightIsOn ? styles.on : styles.off}`}
+      onClick={() => setLightIsOn(prevState => !prevState)}
     />
   )
 }
