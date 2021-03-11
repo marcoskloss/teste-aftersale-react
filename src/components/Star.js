@@ -1,8 +1,7 @@
 import styles from '../styles/components/Star.module.css'
 
-export function Star() {
-  /*logica para mudar a estrela*/
+export function Star({isNight}) {
   return (
-    <div className={styles.container} />
+    <div className={`${styles.container} ${isNight ? styles.moon : styles.sun}`} />
   )
 }

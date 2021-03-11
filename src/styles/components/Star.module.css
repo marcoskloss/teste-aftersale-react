@@ -7,6 +7,13 @@
   right: 4%;
 
   border-radius: 50%;
+}
+
+.sun {
   background: gold;
+}
+
+.moon {
+  background: rgb(160, 160, 160);
 }
 

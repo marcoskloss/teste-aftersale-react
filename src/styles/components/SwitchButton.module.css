@@ -1,7 +1,7 @@
 .container {
   position: absolute;
-  top: 100px;
-  left: 250px;
+  top: 8%;
+  left: 10%;
 
   height: 3rem;
   width: 8rem;
@@ -19,7 +19,7 @@
   font-weight: bold ;
   color: rgb(228, 238, 233);
 
-  background: rgb(9, 230, 93);
+  background: rgb(16, 65, 224);
 
   transition: background .3s;
 
@@ -27,7 +27,7 @@
 }
 
 .container button:hover {
-  background: rgb(15, 212, 91);
+  background: rgb(31, 81, 243);
 }
 
 .container button:first-child {
