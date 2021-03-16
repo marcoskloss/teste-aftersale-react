@@ -11,7 +11,7 @@
 <br>
 
 <p align="center">
-  <img alt="React Todo" src=".github/preview.gif" width="100%">
+  <img alt="Preview gif" src=".github/preview.gif" width="100%">
 </p>
 
 
@@ -24,7 +24,8 @@ Tecnologias utilizadas:
 
 ## 💻 Projeto
 
-Nesse projeto refiz um desafio que fiz anteriormente para uma vaga de emprego, mas agora utilizando ReactJS. A aplicação consiste em um prédio com janelas que reagem ao clique acendendo ou apagando sua luz e um botão global que afeta todas as janelas, além disso, o cenário e o prédio tẽm seu estado atualizado conforme os horários de nascer e põr do sol que são disponibilizados pela Sunset Sunrise API.
+  Nesse projeto refiz um desafio que fiz anteriormente para uma vaga de estágio, mas agora utilizando ReactJS. A aplicação consiste em um prédio com janelas que reagem ao clique acendendo ou apagando sua luz e um botão global que afeta todas as janelas, além disso, o cenário e o prédio tẽm seu estado atualizado conforme os horários de nascer e põr do sol que são disponibilizados pela Sunset Sunrise API.
+
 ---
 
 #### 🛠️ Instale o projeto na sua máquina:
